@@ -1,0 +1,10 @@
+<br/>
+<form [formGroup]="formGroup">
+  <input type="file" (change)="onFileChangeImage($event);"/>
+</form>
+<ion-item>
+  <ion-label>Google Map :</ion-label>
+  <a href="http://www.google.com/maps/place/{{my_image.gpsLatitude}},{{my_image.gpsLongitude}}" target="_blank">
+    Check position on google maps
+  </a>
+</ion-item>
